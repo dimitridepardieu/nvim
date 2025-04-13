@@ -697,6 +697,8 @@ require('lazy').setup({
         ts_ls = {},
 
         eslint = {},
+
+        phpactor = {},
       }
 
       -- Ensure the servers and tools above are installed
