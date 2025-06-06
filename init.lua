@@ -254,7 +254,13 @@ rtp:prepend(lazypath)
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
-  'NMAC427/guess-indent.nvim', -- Detect tabstop and shiftwidth automatically
+
+  -- Dimitri: I'll revert to tpope plugin for now because I have issues with
+  -- guess-indent.nvim. The plugin replaced tpope/vim-sleuth in a recent
+  -- commit on the kickstart.nvim repository.
+  -- TODO: This needs further investigation.
+  'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
+  -- 'NMAC427/guess-indent.nvim', -- Detect tabstop and shiftwidth automatically
 
   -- NOTE: Plugins can also be added by using a table,
   -- with the first argument being the link and the following
